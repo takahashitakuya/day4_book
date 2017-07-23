@@ -1,0 +1,6 @@
+<h1><%= @book.name %></h1>
+<dl><dt>価格</dt><dd><%= @book.price %></dd></dl>
+<dl><dt>出版社</dt><dd><%= @book.publish %></dd></dl>
+<dl><dt>出版日</dt><dd><%= @book.publish_date %></dd></dl>
+<%= link_to "編集",edit_book_path(@book) %>
+<a href="<%= book_path(@book) %>" data-method="delete" >削除</a>

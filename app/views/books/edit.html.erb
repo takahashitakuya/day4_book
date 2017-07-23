@@ -1,0 +1,28 @@
+<h1>Books#new</h1>
+<p>Find me in app/views/books/new.html.erb</p>
+<%= form_with model: @book, local: true, url: {action: :update} do |form| %>
+
+<dl><dt>書籍名</dt><dd>
+<%= form.text_field:name%> 
+</dd></dl>
+
+<dl><dt>価格</dt><dd>
+<%= form.number_field:price%>
+</dd></dl>
+
+<dl><dt>出版社</dt><dd>
+<%= form.text_field:publish%>
+</dd></dl>
+
+<dl><dt>出版日</dt><dd>
+<%= form.date_field:publish_date%>
+</dd></dl>
+
+
+
+
+
+<%= form.submit "登録" %>
+
+
+<% end %>
